@@ -26,3 +26,16 @@
     transform: translate(-100%, 0);
   }
 }
+.img1 {
+  position: absolute;
+  top: 650px;
+  left: 25px;
+}
+.img2 {
+  position: absolute;
+  top: 550px;
+  right: 25px;
+}
+.h2 {
+  font-family: sans-serif;
+}

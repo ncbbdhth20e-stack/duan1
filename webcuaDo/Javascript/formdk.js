@@ -63,3 +63,14 @@ function showpassword() {
     input.type = "password";
   }
 }
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", function (e) {
+    e.preventDefault(); // chặn reload
+    const formData = new FormData(this);
+    console.log("Username: ", formData.get("Name"));
+    console.log("PhoneNumber: ", formData.get("telnumber"));
+    console.log("DayOFBirth: ", formData.get("date"));
+    console.log("Email: ", formData.get("email"));
+    console.log("Password:", formData.get("passwords"));
+  });
